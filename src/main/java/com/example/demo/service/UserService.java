@@ -4,7 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
- 
+import org.springframework.util.StringUtils;
+
 import com.example.demo.entity.User;
 import com.example.demo.mapper.UserMapper;
  
@@ -39,4 +40,9 @@ public class UserService {
 	public User findUserById(int id) {
 		return userMapper.findUserById(id);
 	}
+	
+	public static void main(String[] args) {
+		StringUtils.isEmpty(new Object());
+	}
+	
 }

@@ -16,7 +16,7 @@ public class JdbcCommit {
 	public static Connection getConnection() {
 		String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8";
 		String user = "root";
-		String password = "123456";
+		String password = "root";
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -68,8 +68,8 @@ public class JdbcCommit {
 
 
 	public static void main(String[] args) {
-//		dealAddDataInfo();
-		Truncate();
+		dealAddDataInfo();
+//		Truncate();
 	}
 
 }
